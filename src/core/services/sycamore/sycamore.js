@@ -9,7 +9,7 @@
  */
 ! function (e, t) {   
   "object" == typeof exports && "undefined" != typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define(t) : e.Sycamore = t()
-}(this, function () {
+}(window, function () {
   "use strict";
   var e = Object.assign || function (e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -245,6 +245,4 @@
     }();
   return s
 });
-const Sycamore = s;
-export default Sycamore;
 //# sourceMappingURL=sycamore.js.map
