@@ -1,6 +1,6 @@
 // src/core/classes/dialogo.js
 import * as Constants from "../constants/index.js";
-
+import Sycamore from "../services/sycamore/sycamore.js"
 export class Dialogo {
     constructor(dialogTree) {
         this.dialogTree = dialogTree;

@@ -245,4 +245,6 @@
     }();
   return s
 });
+const Sycamore = s;
+export default Sycamore;
 //# sourceMappingURL=sycamore.js.map
