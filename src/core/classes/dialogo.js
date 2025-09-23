@@ -1,6 +1,8 @@
 // src/core/classes/dialogo.js
 import * as Constants from "../constants/index.js";
-import Sycamore from "../services/sycamore/sycamore-wrapper.js"
+
+import sycamorePromise from '../services/sycamore/sycamore-wrapper.js';
+
 export class Dialogo {
     constructor(dialogTree) {
         this.dialogTree = dialogTree;
@@ -17,12 +19,14 @@ export class Dialogo {
     }
 
     setupEventListeners() {
-        this.startBtn.addEventListener('click', () => {
+        this.startBtn.addEventListener('click', async () => {
             this.startBtn.style.display = "none";
             this.quitBtn.style.display = 'flex';
-            if (this.sycamore) {
-                this.sycamore.init();
+            if (!this.sycamore) {
+                await this.initDialog();
             }
+
+            this.sycamore.init();
         });
 
         this.quitBtn.addEventListener('click', () => {
@@ -32,7 +36,7 @@ export class Dialogo {
         });
     }
 
-    initDialog() {
+    async initDialog() {
         const options = {
             speed: 1,
             firstMessage: 'mainMenuDialogue',
@@ -40,6 +44,7 @@ export class Dialogo {
         };
 
         if (!this.sycamore) {
+            const Sycamore = await sycamorePromise;
             this.sycamore = new Sycamore(this.dialogTree, options);
 
             this.setupSycamoreListeners();
