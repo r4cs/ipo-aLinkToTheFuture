@@ -2,11 +2,11 @@ console.log("Rodando The Legend of IPO - A link to the future");
 
 import * as Constants from './constants/index.js';
 import { setupCanvas } from './canvas.js';
-import {collisions} from '../../assets/data/collisions.js';
-import {charactersMapData} from '../../assets/data/characters.js';
+import {collisions} from '@assets/data/collisions.js';
+import {charactersMapData} from '@assets/data/characters.js';
 import { Boundary, Sprite, Character, Dialogo } from './classes/index.js';
 import { InputHandler, CollisionDetector } from './managers/index.js';
-import { mainMenuDialogue } from '../../assets/data/dialogos.js';
+import { mainMenuDialogue } from '@assets/data/dialogos.js';
 import { DialogManager } from '../ui/dialog-manager.js';
 
 console.log("📦 All dependencies loaded for migration");

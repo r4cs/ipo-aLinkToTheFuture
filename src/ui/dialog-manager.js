@@ -1,6 +1,6 @@
 // src/ui/dialog-manager.js
 import { Dialogo } from "../core/classes/dialogo";
-import { mainMenuDialogue } from "../../assets/data/dialogos";
+import { mainMenuDialogue } from "@assets/data/dialogos";
 
 export class DialogManager {
     constructor() {

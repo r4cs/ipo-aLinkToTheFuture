@@ -1,6 +1,6 @@
 // src/core/collision-detector.js
 
-import { charactersMapData  } from "../../../assets/data/characters";
+import { charactersMapData  } from "@assets/data/characters";
 import * as Constants from '../constants/index.js';
 
 export class CollisionDetector {
