@@ -9,7 +9,7 @@
  */
 ! function (e, t) {   
   "object" == typeof exports && "undefined" != typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define(t) : e.Sycamore = t()
-}(window, function () {
+}(this, function () {
   "use strict";
   var e = Object.assign || function (e) {
       for (var t = 1; t < arguments.length; t++) {
