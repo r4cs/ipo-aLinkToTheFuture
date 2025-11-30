@@ -1,12 +1,9 @@
 @media only screen and (max-device-width: 724px) {
-/*@media screen and (max-width: 800px) and (min-width: 400px) {*/
-/*@media screen and (min-width: 800px ) {*/
 	canvas {
 		display: grid;
 		grid-template-columns: auto;
         width: 100%;
 		height: 100%;
-        
 		border: 6px solid var(--stroke);
 		box-shadow: inset 6px 6px rgba(0,0,0,0.2);
 		overflow: hidden;
@@ -73,16 +70,14 @@
 	}
 	.gameboy {
 	  display: grid;
-	  /*display: flex;*/
 	  align-items: center;
 	  justify-content: center;
 	  height: 100vh;
 	}
 	.gameboy-body {
 	 background-color: var(--blue);
-	 max-width: 80%; /* 320px; */
-	 /*width: 95%; !* 320px; *!*/
-	 height: 98%; /* 590px; */
+	 max-width: 100%;
+	 height: 100%;
 	 border-radius: 20px 20px 50px;
 	 border: 6px solid var(--stroke);	 
 	 box-shadow: inset 10px 0 rgba(255,255,255,0.7), inset -10px 0 rgba(0,0,0,0.2) ;
@@ -110,13 +105,6 @@
 	.screen {
     display: grid;
     grid-template-columns: auto;
-/*
-    grid-row-gap: 1px;
-    grid-column-gap: 1px;
-    padding: 2px;
-    background: blue;
-*/
-	 /*width: 90vw;*/
 	 height: 55vh; 
 	 background-color: var(--light-brow);
 	 margin: 8px 0 0 8px;
@@ -124,6 +112,7 @@
 	 padding: 4px;
 	 border-radius: 10px 10px 30px;
 	 position: relative;
+	 align-content: center;
 	}
 	.screen .glass {
 	 width: 100%;
@@ -174,7 +163,6 @@
 	}
 
 	.actions {
-	/*  display: flex; */
 	 padding: 10px 14px 0;
 	}
 	.directions {

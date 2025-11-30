@@ -29,7 +29,6 @@
         padding: 0;
     }
 
-    /* CONTAINER DOS BOTÕES - FIXO */
     .button-container {
         position: fixed;
         top: 20px;
@@ -45,7 +44,6 @@
         pointer-events: auto;
     }
 
-    /* BOTÕES DESKTOP */
     #start-button {
         font-size: 1.25em;
         padding: 0.35em 1em;
@@ -75,7 +73,6 @@
         z-index: 101;
     }
 
-    /* ÁREA PRINCIPAL DO DIÁLOGO */
     #main-dialog {
         width: 90%;
         max-width: 800px;
@@ -86,10 +83,9 @@
         justify-content: center;
         position: relative;
         background-color: transparent;
-        margin-top: 80px; /* Espaço para os botões fixos */
+        margin-top: 80px; 
     }
 
-    /* CONTEÚDO DO DIÁLOGO */
     .dialog-content {
         width: 100%;
         height: 100%;
@@ -102,7 +98,6 @@
         box-sizing: border-box;
     }
 
-    /* OVERLAY */
     .overlay {
         width: 100%;
         text-align: center;
